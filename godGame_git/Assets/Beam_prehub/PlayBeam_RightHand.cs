@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlayBeam_RightHand : MonoBehaviour
 {
     public GameObject player; // プレイヤーオブジェクト
-    public GameObject halfTorusColliderPrefab; // 半トーラスの当たり判定のプレハブ
-    public KeyCode keyToPress = KeyCode.J; // 生成をトリガーするキー
+    public GameObject bulletPrefab;
+    public float shotpower = 5.0f;
+    public KeyCode shotkey = KeyCode.J; // 生成をトリガーするキー
 
 
     private GameObject currentBullet; // 生成された弾丸を保持するための変数
@@ -20,42 +21,21 @@ public class PlayBeam_RightHand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // キーが押されたら半トーラスの当たり判定を生成
-        if (Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(shotkey))
         {
-            // プレイヤーの前方に当たり判定を生成
-            Vector3 spawnPosition = player.transform.position + player.transform.forward * 2.0f; // プレイヤーの前方2メートル
-            Quaternion spawnRotation = player.transform.rotation;
-            GameObject halfTorusCollider = Instantiate(halfTorusColliderPrefab, spawnPosition, spawnRotation);
+            Vector3 pos = transform.position + transform.forward * 0.5f;
+            pos.y += 0.5f;
 
-            // 半トーラスの当たり判定にコライダーがあるか確認
-            Collider collider = halfTorusCollider.GetComponent<Collider>();
-            if (collider != null)
-            {
-                // コライダーの衝突イベントを監視
-                //collider.gameObject.GetComponent<Collider>().attachedRigidbody.OnTriggerEnter.AddListener(OnTriggerEnter);
-            }
+            currentBullet = Instantiate(bulletPrefab, pos, Quaternion.identity);
 
-            //void OnTriggerEnter(Collider other)
-            //{
-            //    // 衝突したオブジェクトが"enemy"タグを持つ場合は削除する
-            //    if (other.CompareTag("enemy"))
-            //    {
-            //        Destroy(other.gameObject);
-            //    }
-            //}
+            currentBullet.GetComponent<Rigidbody>().AddForce(transform.forward * shotpower, ForceMode.Impulse);
         }
 
         // キーが離されたら弾丸を消す
-        if (Input.GetKeyUp(KeyCode.J) && halfTorusColliderPrefab != null)
+        if (Input.GetKeyUp(shotkey) && currentBullet != null)
         {
-            Destroy(halfTorusColliderPrefab);
+            Destroy(currentBullet);
         }
-
-
     }
-
-
-    
 }
 

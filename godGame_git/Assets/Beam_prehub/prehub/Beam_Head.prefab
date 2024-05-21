@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8243327087502187554}
   - component: {fileID: 4010469488612237696}
+  - component: {fileID: -8282140072168542992}
   m_Layer: 0
   m_Name: Beam_Head
   m_TagString: Untagged
@@ -94,3 +95,17 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!136 &-8282140072168542992
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3793261005601366516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
