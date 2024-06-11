@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class GroundChacker : MonoBehaviour
+{
+    //public bool IsGround { get; private set; }
+
+    // Ç†ÇΩÇ¡ÇΩ
+    private bool IsGround = false;
+
+    //[SerializeField] BoxCollider Collider;
+
+    [Header("ColliderÇ∆ínñ ÇÃãóó£Ç™Ç±ÇÃílÇÊÇËè¨Ç≥ÇØÇÍÇŒê⁄ínÇ∆îªíËÇ∑ÇÈ")]
+    public float FloatingDistance = 0.01f;
+
+    [Header("BoxCastÇÃî≠ê∂å≥Çè≠Çµè„Ç…Ç∏ÇÁÇ∑ãóó£")]
+    public float Epsilon = 0.01f;
+
+    public LayerMask GroundLayerMask;
+
+    private float scale;
+
+    RaycastHit hit;
+
+    public BoxCollider boxCollider;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        scale = boxCollider.transform.lossyScale.x * 0.5f;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        IsGround = Physics.BoxCast(
+            boxCollider.transform.position + new Vector3(0, Epsilon, 0),
+            boxCollider.transform.lossyScale * 0.5f,
+            Vector3.down,
+            out hit,
+            boxCollider.transform.rotation,
+            FloatingDistance + Epsilon,
+            GroundLayerMask);
+
+        //if (IsGround) print("Ç∂ÇﬂÇÒ");
+        //else print("ÇªÇÁ");
+
+        //print(boxCollider.transform.lossyScale);
+    }
+
+    public bool GetIsGround() { return IsGround; }
+}
