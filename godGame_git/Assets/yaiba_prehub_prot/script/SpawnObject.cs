@@ -12,6 +12,7 @@ public class SpawnObject : MonoBehaviour
     public GameObject serchObj;        //検知するオブジェクト
     public float constancyTime = 0.0f;  //出現する間隔の時間、０なら１度だけ実行される
     public bool isPlayTime0 = true;    //０秒の時に実行するか
+    public int playRepeat = 1;
 
     int playCount = 0;
     bool timerStart = false;
@@ -38,19 +39,22 @@ public class SpawnObject : MonoBehaviour
             time += Time.deltaTime;
             if (constancyTime > 0.0f || isPlayTime0)
             {
-                if (time > constancyTime)
+                if (playCount <= 0)
+                {
+                    spawnObjects();
+                    playCount++;
+                }
+                if (time >= constancyTime && playCount < playRepeat)
                 {
                     time = 0.0f;
-                    if (isPlayTime0)
-                    {
-                        spawnObjects();
-                    }
+                    spawnObjects();
+                    playCount++;
                 }
             }
             else if (constancyTime <= 0.0f && playCount == 0)
             {
                 spawnObjects();
-                playCount += 1;
+                playCount++;
             }
         }
 
