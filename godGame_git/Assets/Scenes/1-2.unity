@@ -1065,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9027945348239269465, guid: fbabb1ccba3fd4741b1952fdee4dd6c3, type: 3}
       propertyPath: m_TagString
-      value: player
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbabb1ccba3fd4741b1952fdee4dd6c3, type: 3}
@@ -3121,7 +3121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 325391112812001446, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
       propertyPath: tagSerchTarget
-      value: player
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 325391112812001466, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
       propertyPath: m_LocalScale.x
