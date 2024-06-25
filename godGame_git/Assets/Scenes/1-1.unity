@@ -585,6 +585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: miku_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9027945348239269465, guid: fbabb1ccba3fd4741b1952fdee4dd6c3, type: 3}
+      propertyPath: m_TagString
+      value: player
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2271287081971146529, guid: fbabb1ccba3fd4741b1952fdee4dd6c3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fbabb1ccba3fd4741b1952fdee4dd6c3, type: 3}
@@ -1192,6 +1196,18 @@ PrefabInstance:
       propertyPath: playRepeat
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 325391112304443823, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
+      propertyPath: objects.Array.data[0]
+      value: 
+      objectReference: {fileID: 5822851724134356809, guid: a2bcfdb7f7513fd4bbc6f43e0eb1160a, type: 3}
+    - target: {fileID: 325391112304443823, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
+      propertyPath: objects.Array.data[1]
+      value: 
+      objectReference: {fileID: 5822851724134356809, guid: a2bcfdb7f7513fd4bbc6f43e0eb1160a, type: 3}
+    - target: {fileID: 325391112304443823, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
+      propertyPath: objects.Array.data[2]
+      value: 
+      objectReference: {fileID: 5822851724134356809, guid: a2bcfdb7f7513fd4bbc6f43e0eb1160a, type: 3}
     - target: {fileID: 325391112812001444, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2883,6 +2899,18 @@ PrefabInstance:
       propertyPath: playRepeat
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 325391112304443823, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
+      propertyPath: objects.Array.data[0]
+      value: 
+      objectReference: {fileID: 5822851724134356809, guid: a2bcfdb7f7513fd4bbc6f43e0eb1160a, type: 3}
+    - target: {fileID: 325391112304443823, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
+      propertyPath: objects.Array.data[1]
+      value: 
+      objectReference: {fileID: 5822851724134356809, guid: a2bcfdb7f7513fd4bbc6f43e0eb1160a, type: 3}
+    - target: {fileID: 325391112304443823, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
+      propertyPath: objects.Array.data[2]
+      value: 
+      objectReference: {fileID: 5822851724134356809, guid: a2bcfdb7f7513fd4bbc6f43e0eb1160a, type: 3}
     - target: {fileID: 325391112812001444, guid: 6dab38c083a6a804bb59085e55a75350, type: 3}
       propertyPath: m_Enabled
       value: 0
