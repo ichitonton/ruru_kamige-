@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(DiagonalMovement))]
-//[RequireComponent(typeof(AttackManager))]     // ‚¦‚ñ‚¿‚á‚ñ‚ª‚Â‚­‚Á‚½‚â‚Â
+//[RequireComponent(typeof(AttackManager))]
 
-public class BulletManagar : MonoBehaviour
+public class BulletManager : MonoBehaviour
 {
     private Vector3 shotDirection;
     private DiagonalMovement diagonalMovement;
 
-    BulletManagar() 
+    public BulletManager() 
     {
         shotDirection = Vector3.zero;
     }

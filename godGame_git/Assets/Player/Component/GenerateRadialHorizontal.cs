@@ -24,7 +24,7 @@ public class GenerateRadialHorizontal : GenerateBase
 
         for (int i = -left; i < proto; ++i)
         {
-            Instantiate(generateObject, position, Quaternion.identity).GetComponent<BulletManagar>().SetShotDirection(Quaternion.Euler(0.0f, (Angle * i), 0.0f) * forward);
+            Instantiate(generateObject, position, Quaternion.identity).GetComponent<BulletManager>().SetShotDirection(Quaternion.Euler(0.0f, (Angle * i), 0.0f) * forward);
         }
     }
 
@@ -36,7 +36,7 @@ public class GenerateRadialHorizontal : GenerateBase
 
         for (int i = -left; i < proto; ++i)
         {
-            Instantiate(generateObject, position, Quaternion.identity).GetComponent<BulletManagar>().SetShotDirection(Quaternion.Euler(0.0f, (Angle * i) + halfAngle, 0.0f) * forward);
+            Instantiate(generateObject, position, Quaternion.identity).GetComponent<BulletManager>().SetShotDirection(Quaternion.Euler(0.0f, (Angle * i) + halfAngle, 0.0f) * forward);
         }
     }
 }
