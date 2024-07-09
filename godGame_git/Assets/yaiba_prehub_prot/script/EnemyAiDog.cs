@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor.Timeline;
 
-public class AiDogEnemy : MonoBehaviour
+public class EnemyAiDog : MonoBehaviour
 {
     public GameObject searchRange;
     public float moveSpeed;
@@ -67,7 +67,7 @@ public class AiDogEnemy : MonoBehaviour
                 }
                 else if (sTime >= 2.2f)
                 {
-                    velocity *= 0.7f;
+                    velocity *= 0.0f;
                 }
                 else if (sTime >= 2.0f)
                 {
