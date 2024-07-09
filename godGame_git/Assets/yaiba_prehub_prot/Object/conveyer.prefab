@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9056299437231640728}
   - component: {fileID: 9056299437231640743}
   m_Layer: 0
-  m_Name: direction
+  m_Name: Direction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 9056299438255689244}
   - component: {fileID: 9056299438255689243}
   m_Layer: 0
-  m_Name: addMove
+  m_Name: AddMove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

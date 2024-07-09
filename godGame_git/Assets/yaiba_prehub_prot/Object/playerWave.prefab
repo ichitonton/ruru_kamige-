@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6326845104105215299}
   - component: {fileID: 9080402832260327706}
   m_Layer: 0
-  m_Name: wave
+  m_Name: playerWave
   m_TagString: attackWave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackPower: 10
   chargeGage: 1
-  tagPlayer: player
+  nameThis: player
   tagTarget: enemy
   isHitDestroy: 1
   destroyObj: {fileID: 937669533259281154}

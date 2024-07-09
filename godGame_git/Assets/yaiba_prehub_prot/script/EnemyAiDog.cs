@@ -79,6 +79,6 @@ public class EnemyAiDog : MonoBehaviour
             }
         }
         //rb.transform.position += velocity * 0.01f;
-        rb.AddForce(velocity * 0.05f, ForceMode.Impulse);
+        rb.AddForce(velocity * 0.05f, ForceMode.VelocityChange);
     }
 }
