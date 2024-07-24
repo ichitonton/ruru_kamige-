@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3883794076238995459}
   - component: {fileID: 3883794076238995458}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Direction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 3883794077664797487}
   - component: {fileID: 3883794077664797486}
   m_Layer: 0
-  m_Name: collider
+  m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,8 +210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackPower: 10
   chargeGage: 0
-  tagPlayer: 
-  tagTarget: player
+  tagThis: 
+  tagTarget: Player
   isHitDestroy: 0
   destroyObj: {fileID: 5822851724134356809}
   isHitContinuity: 1
@@ -772,7 +772,7 @@ GameObject:
   - component: {fileID: 5822851724556812906}
   - component: {fileID: 5822851724556812905}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 2435370319947230239}
   - component: {fileID: 1011270624459677236}
   m_Layer: 0
-  m_Name: serch
+  m_Name: Serch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

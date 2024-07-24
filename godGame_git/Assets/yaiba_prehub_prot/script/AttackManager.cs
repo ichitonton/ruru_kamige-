@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class AttackManager : MonoBehaviour
@@ -14,6 +15,9 @@ public class AttackManager : MonoBehaviour
     public bool gage;//ƒQ[ƒW‚ÌŠT”O‚ª‚ ‚é‚©‚Ç‚¤‚©
     bool oldHit = false;
     GameObject player;
+
+    [SerializeField] public TagField tagField;
+
     // Start is called before the first frame update
     void Start()
     {

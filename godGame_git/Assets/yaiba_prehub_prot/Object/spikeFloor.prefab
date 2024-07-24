@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 905023658718755546}
   - component: {fileID: 6217261830809352533}
   m_Layer: 0
-  m_Name: spikes
+  m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,6 +563,7 @@ MonoBehaviour:
   tagPlayer: 
   tagTarget: player
   isHitDestroy: 0
+  destroyObj: {fileID: 0}
   isHitContinuity: 1
   gage: 0
 --- !u!65 &905023658718755546

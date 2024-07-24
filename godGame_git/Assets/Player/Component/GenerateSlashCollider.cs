@@ -6,6 +6,6 @@ public class GenerateSlashCollider : GenerateBase
 {
     public override void Action(Vector3 position, Vector3 forward)
     {
-        Instantiate(generateObject,position,Quaternion.identity).GetComponent<BulletManagar>().transform.parent = transform;
+        Instantiate(generateObject,position,Quaternion.identity).GetComponent<BulletManager>().transform.parent = transform;
     }
 }

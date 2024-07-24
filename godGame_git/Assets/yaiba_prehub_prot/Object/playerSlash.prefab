@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -3806116678354185827}
   - component: {fileID: 3223896583498281167}
   m_Layer: 0
-  m_Name: slash
+  m_Name: playerSlash
   m_TagString: attackSlash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,9 +78,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackPower: 10
   chargeGage: 1
-  tagPlayer: player
+  nameThis: player
   tagTarget: enemy
   isHitDestroy: 0
+  destroyObj: {fileID: 0}
   isHitContinuity: 0
   gage: 1
 --- !u!1 &2753376029817969571

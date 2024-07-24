@@ -10,6 +10,12 @@ using UnityEngine;
 [RequireComponent(typeof(CameraController))]
 
 
+[RequireComponent(typeof(hpManager))]
+[RequireComponent(typeof(chargeManager))]
+
+
+
+
 public class PlayerManager : MonoBehaviour
 {
     //Rigidbody rigidbody;
